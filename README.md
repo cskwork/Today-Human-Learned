@@ -40,6 +40,10 @@
 
 - 2026-01-22 — [Claude Code 처음 세팅하는 사람을 위한 기본 가이드](claude-code/2026-01-22-claude-code-basic-setup.md)
 
+### security
+
+- 2026-05-18 — [Salt vs Pepper — 비밀번호 해시에서 둘이 다른 이유](security/2026-05-18-salt-vs-pepper.md)
+
 ---
 
 작성: [@cskwork](https://github.com/cskwork)
