@@ -1,0 +1,54 @@
+{{- if lt hugo.Version "0.146.0" }}
+{{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
+{{- end -}}
+
+<!DOCTYPE html>
+{{- $theme := site.Params.defaultTheme | default "auto" }}
+{{- if eq $theme "dark" }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="dark">
+{{- else if eq $theme "light" }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="light">
+{{- else }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="auto">
+{{- end }}
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
+<body class="list thl-has-sidebar" id="top">
+{{- else }}
+<body class="thl-has-sidebar" id="top">
+{{- end }}
+    {{ partialCached "header.html" . .Page -}}
+    <div class="thl-shell">
+        {{ partial "sidebar.html" . }}
+        <main class="main">
+            {{- block "main" . }}{{ end }}
+        </main>
+    </div>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    <script>
+    (function () {
+      var body = document.body;
+      var open = document.querySelector('[data-thl-sidebar-open]');
+      var closers = document.querySelectorAll('[data-thl-sidebar-close]');
+      if (open) open.addEventListener('click', function () { body.classList.add('thl-sidebar-open'); });
+      closers.forEach(function (el) { el.addEventListener('click', function () { body.classList.remove('thl-sidebar-open'); }); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') body.classList.remove('thl-sidebar-open');
+      });
+      var active = document.querySelector('.thl-file.is-active');
+      if (active) {
+        var parents = [];
+        var p = active.parentElement;
+        while (p && p !== document.body) { if (p.tagName === 'DETAILS') parents.push(p); p = p.parentElement; }
+        parents.forEach(function (d) { d.open = true; });
+        try { active.scrollIntoView({ block: 'center' }); } catch (_) {}
+      }
+    })();
+    </script>
+</body>
+
+</html>
