@@ -1,0 +1,152 @@
+baseURL = "https://cskwork.github.io/Today-Human-Learned/"
+defaultContentLanguage = "ko"
+title = "Today Human Learned"
+theme = "PaperMod"
+
+[languages]
+  [languages.ko]
+    languageName = "한국어"
+    locale = "ko"
+    weight = 1
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = false
+hasCJKLanguage = true
+pygmentsUseClasses = true
+
+[pagination]
+  pagerSize = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[params]
+  env = "production"
+  description = "매일 마주친 문제·도구·개념을 Feynman 스타일로 짧게 정리합니다."
+  author = "cskwork"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = false
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  DateFormat = "2006-01-02"
+
+  [params.homeInfoParams]
+    Title = "Today Human Learned"
+    Content = """
+매일 마주친 문제·도구·개념을 **Feynman 스타일**로 짧게 정리합니다.
+한 글은 60~120줄, 한 주제만 다룹니다.
+
+핵심 흐름: **TL;DR → 왜 쓰는지 → 핵심 흐름 → 핵심 용어 5개 → 예시 → 판단 기준 → 다음에 배울 내용**
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    title = "GitHub"
+    url = "https://github.com/cskwork/Today-Human-Learned"
+
+  [params.assets]
+    disableHLJS = true
+    disableFingerprinting = false
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    limit = 30
+    keys = ["title", "permalink", "summary", "content", "tags"]
+
+  [params.label]
+    text = "THL"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[menu.main]]
+  identifier = "ai"
+  name = "AI"
+  url = "/ai/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "java"
+  name = "Java"
+  url = "/java/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "javascript"
+  name = "JS/TS"
+  url = "/javascript/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "python"
+  name = "Python"
+  url = "/python/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "database"
+  name = "DB"
+  url = "/database/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "kubernetes"
+  name = "K8s"
+  url = "/kubernetes/"
+  weight = 60
+
+[[menu.main]]
+  identifier = "aws"
+  name = "AWS"
+  url = "/aws/"
+  weight = 65
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Topics"
+  url = "/categories/"
+  weight = 80
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archive"
+  url = "/archives/"
+  weight = 90
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 100

@@ -1,0 +1,71 @@
++++
+title = "Linux: 특정 포트의 프로세스 종료하기"
+date = "2024-05-25"
+description = "`lsof -i :포트번호`로 PID를 찾고, `kill`로 종료한다. 가능하면 SIGTERM(15) 먼저, 안 되면 SIGKILL(9)."
+tags = ["linux"]
+categories = ["linux"]
+draft = false
+ShowToc = true
+TocOpen = false
++++
+
+> **TL;DR**
+> `lsof -i :포트번호`로 PID를 찾고, `kill`로 종료한다. 가능하면 SIGTERM(15) 먼저, 안 되면 SIGKILL(9).
+
+---
+
+## 이 작업을 왜 하는지 감 잡기
+
+개발하다 보면 "포트가 이미 사용 중입니다(Address already in use)"라는 오류를 자주 만난다. 이전에 실행한 서버 프로세스가 아직 포트를 점유하고 있기 때문이다. 포트를 해제하려면 그 포트를 쓰는 프로세스를 직접 찾아서 종료해야 한다. 이때 `lsof`와 `kill`을 조합해 사용한다.
+
+초보자는 처음에 이렇게 이해하면 된다.
+
+`핵심 흐름: 포트 확인(lsof) → PID 추출 → 프로세스 종료(kill)`
+
+## 외워야 할 핵심 용어 5개
+
+| 용어 | 초보자식 설명 |
+|---|---|
+| PID | 프로세스 ID. 운영체제가 각 실행 중인 프로그램에 붙여주는 고유 번호. |
+| lsof | "list open files". 파일(소켓 포함)을 열고 있는 프로세스를 나열한다. |
+| SIGTERM (15) | 프로세스에게 "정리하고 종료하라"고 요청하는 신호. 무시할 수도 있다. |
+| SIGKILL (9) | 프로세스를 강제로 즉시 종료하는 신호. 무시 불가. 데이터 유실 위험이 있다. |
+| LISTEN | 네트워크 소켓이 외부 연결을 기다리는 상태. |
+
+## 예를 들어 설명하면
+
+8000번 포트를 점유한 프로세스를 종료하는 과정이다.
+
+```bash
+# 1. 현재 LISTEN 중인 모든 포트와 프로세스 확인
+sudo lsof -i -P -n | grep LISTEN
+
+# 2. 8000번 포트를 쓰는 PID만 추출
+sudo lsof -t -i:8000
+
+# 3. 정상 종료 시도 (SIGTERM, 권장)
+sudo kill -15 $(sudo lsof -t -i:8000)
+
+# 4. 위가 안 될 때만 강제 종료 (SIGKILL)
+sudo kill -9 $(sudo lsof -t -i:8000)
+```
+
+SIGTERM을 먼저 쓰는 이유는, 프로세스가 연결을 정리하고 파일을 닫을 기회를 주기 때문이다. DB나 파일을 다루는 프로그램에서 SIGKILL을 바로 쓰면 데이터가 손상될 수 있다.
+
+## 이 단계에서 중요한 판단 기준
+
+SIGKILL은 최후의 수단이다. SIGTERM으로 먼저 시도하고, 수 초 뒤에도 프로세스가 살아 있을 때만 SIGKILL을 사용한다.
+
+## 한 줄 요약 — 이것만 기억하면 된다
+
+**`sudo kill -15 $(sudo lsof -t -i:포트번호)` 한 줄이면 대부분 해결되고, 안 되면 `-15`를 `-9`로 바꾼다.**
+
+## 나중에 더 깊게 들어가면
+
+- `fuser -k 포트번호/tcp` 명령어를 사용하는 방법
+- `ss` 명령어로 소켓 상태를 확인하는 더 빠른 방법
+- systemd 서비스로 관리되는 프로세스를 올바르게 재시작하는 방법
+
+---
+
+**원본:** [Linux: Kill Process of Specific Port](https://memoryhub.tistory.com/48)

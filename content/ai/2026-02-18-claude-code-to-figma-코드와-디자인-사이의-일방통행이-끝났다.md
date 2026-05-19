@@ -1,0 +1,66 @@
++++
+title = "Claude Code to Figma — 코드와 디자인 사이의 일방통행이 끝났다"
+date = "2026-02-18"
+description = "Figma와 Anthropic이 공개한 \"Code to Canvas\"로 Claude Code에서 만든 UI를 Figma 편집 가능 프레임으로 바로 변환할 수 있게 됐다. 코드에서 디자인으로, 디자인에서 코드로 양방향 왕복이 가능하다."
+tags = ["ai"]
+categories = ["ai"]
+draft = false
+ShowToc = true
+TocOpen = false
++++
+
+> **TL;DR**
+> Figma와 Anthropic이 공개한 "Code to Canvas"로 Claude Code에서 만든 UI를 Figma 편집 가능 프레임으로 바로 변환할 수 있게 됐다. 코드에서 디자인으로, 디자인에서 코드로 양방향 왕복이 가능하다.
+
+---
+
+## Code to Canvas를 왜 써야 하는지 감 잡기
+
+AI 코딩 도구로 UI를 만드는 건 이제 어렵지 않다. 문제는 그다음이다. 만들어진 결과물이 개발자의 로컬 환경에 갇혀 있다. 팀원이 확인하려면 직접 빌드를 돌리거나 스크린샷을 받아야 한다. 디자이너가 피드백을 주려면 그 결과물을 Figma에서 처음부터 다시 그려야 했다.
+
+지금까지 디자인과 개발의 흐름은 한 방향이었다. 디자이너가 Figma에서 시안을 만들고 개발자가 코드로 옮기는 구조. AI 코딩 도구가 등장하면서 개발자가 먼저 작동하는 UI를 만드는 경우도 생겼지만, 이걸 팀 전체가 함께 다듬을 방법이 없었다.
+
+Code to Canvas는 이 흐름을 양방향으로 바꾼다.
+
+`핵심 흐름: Claude Code로 UI 생성 → Figma 편집 가능 프레임으로 변환 → 팀 협업 → Figma 디자인을 다시 코드로 구현`
+
+## 외워야 할 핵심 용어 5개
+
+| 용어 | 초보자식 설명 |
+|---|---|
+| Code to Canvas | AI 코딩 도구로 만든 작동하는 UI를 Figma 캔버스의 편집 가능한 디자인 프레임으로 변환하는 기능. |
+| MCP (Model Context Protocol) | AI 도구가 외부 애플리케이션과 상호작용할 수 있도록 하는 개방형 표준. Claude Code와 Figma 사이를 연결하는 범용 어댑터. |
+| Roundtrip | 코드에서 디자인으로, 디자인에서 다시 코드로 왕복하는 워크플로우. 맥락을 잃지 않고 두 세계를 오간다. |
+| 수렴과 발산 | 코드 작업은 한 번에 하나의 상태로 좁혀가는 '수렴'에 강하고, 캔버스 작업은 전체 경험을 펼쳐 방향을 잡는 '발산'에 강하다. |
+| Dev Mode | Figma 데스크톱 앱에서 개발자용 기능(코드 스펙, MCP 서버 등)을 활성화하는 모드. 단축키 Shift+D. |
+
+## 예를 들어 설명하면
+
+설정 방법은 두 가지다. 리모트 서버 방식이 가장 빠르다.
+
+```bash
+# 리모트 MCP 서버 추가 (전체 프로젝트에 적용)
+claude mcp add --scope user --transport http figma-remote-mcp https://mcp.figma.com/mcp
+```
+
+연결 후 Claude Code를 재시작하고 `/mcp` 명령어로 인증하면 준비가 끝난다. 이후 Figma 프레임 링크를 Claude Code 프롬프트에 붙여넣으면 해당 디자인의 맥락을 이해하고 코드를 생성한다. 반대로 Claude Code로 만든 화면을 캡처하면 스크린샷이 아닌 편집 가능한 Figma 프레임이 생성된다.
+
+멀티 스크린 캡처로 온보딩, 결제, 설정 등 전체 플로우를 순서대로 캔버스에 펼칠 수 있다. 팀이 주석을 달고, 프레임을 복제해 대안을 비교하고, 코드 변경 없이 방향을 잡을 수 있다.
+
+## 이 단계에서 중요한 판단 기준
+
+AI가 만든 UI를 팀이 함께 평가하고 다듬을 수 있는 공유 공간이 필요할 때 Code to Canvas를 도입한다. 혼자 작업하거나 피드백 루프가 코드 레벨에서만 이루어지는 환경이라면 설정 비용 대비 이득이 적다.
+
+## 한 줄 요약 — 이것만 기억하면 된다
+
+**Code to Canvas는 AI가 만든 코드와 디자이너의 캔버스 사이에 양방향 다리를 놓아, 팀이 동일한 산출물 위에서 같은 맥락으로 의사결정할 수 있게 한다.**
+
+## 나중에 더 깊게 들어가면
+
+- MCP(Model Context Protocol) 표준의 구조와 다른 도구에서의 활용
+- Figma Agent Skills: Claude Code가 Figma 파일을 직접 조작하는 기능
+- Code to Canvas의 한계: 현재 초기 단계에서 지원되지 않는 컴포넌트 매핑 및 토큰 연동
+
+---
+
+**원본:** [Claude Code to Figma, 코드와 디자인 사이의 일방통행이 끝났다](https://memoryhub.tistory.com/1034)
