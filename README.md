@@ -36,6 +36,10 @@
 
 - 2026-05-19 — [codegraph vs graphify — Java 코드베이스에서 측정해본 결과](code-search/2026-05-19-codegraph-vs-graphify-java.md)
 
+### claude-code
+
+- 2026-01-22 — [Claude Code 처음 세팅하는 사람을 위한 기본 가이드](claude-code/2026-01-22-claude-code-basic-setup.md)
+
 ---
 
 작성: [@cskwork](https://github.com/cskwork)
