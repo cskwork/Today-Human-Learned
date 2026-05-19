@@ -29,7 +29,7 @@ WireMock은 진짜 HTTP 서버를 테스트 프로세스 안에서 띄운다. �
 | 용어 | 초보자식 설명 |
 |---|---|
 | Stub | "이 URL로 오면 이 응답을 줘라"고 미리 정의한 규칙 |
-| @EnableWireMock | WireMock 서버를 자동으로 시작·종료해주는 Spring Boot 어노테이션 |
+| @EnableWireMock | WireMock 서버를 자동으로 시작·종료하는 Spring Boot 어노테이션 |
 | @ConfigureWireMock | 이름과 포트를 지정해 독립된 WireMock 인스턴스를 만들 때 씀 |
 | @InjectWireMock | 특정 이름의 WireMock 인스턴스를 테스트 클래스 필드에 주입하는 어노테이션 |
 | wiremock.server.baseUrl | Spring Context에 자동 등록되는 프로퍼티. 동적으로 할당된 포트 URL을 테스트에서 꺼내 쓸 때 사용 |

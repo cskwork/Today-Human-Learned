@@ -1,7 +1,7 @@
 +++
 title = "로컬 환경에서 API 호스팅을 위한 Ollama 설정 종합 가이드"
 date = "2025-03-02"
-description = "Ollama는 인터넷 없이 내 PC에서 대형 언어 모델을 실행하고 REST API로 바로 호출할 수 있게 해주는 도구다."
+description = "Ollama는 인터넷 없이 내 PC에서 대형 언어 모델을 실행하고 REST API로 바로 호출할 수 있는 도구다."
 tags = ["ai"]
 categories = ["ai"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Ollama는 인터넷 없이 내 PC에서 대형 언어 모델을 실행하고 REST API로 바로 호출할 수 있게 해주는 도구다.
+> Ollama는 인터넷 없이 내 PC에서 대형 언어 모델을 실행하고 REST API로 바로 호출할 수 있는 도구다.
 
 ---
 

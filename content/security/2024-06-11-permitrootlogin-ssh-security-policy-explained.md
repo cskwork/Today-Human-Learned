@@ -20,7 +20,7 @@ TocOpen = false
 
 `/etc/ssh/sshd_config` 파일에 `PermitRootLogin` 항목이 없거나 주석 처리돼 있으면, SSH 서버는 버전에 따라 다른 기본값을 사용한다. 이것이 경고의 원인이다.
 
-초보자는 처음에 이렇게 이해하면 된다.
+처음에는 이렇게 이해하면 된다.
 
 `핵심 흐름: sshd_config 편집 → PermitRootLogin 값 명시 → SSH 서비스 재시작 → 정책 적용`
 

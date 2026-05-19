@@ -1,7 +1,7 @@
 +++
 title = "원격 함수 호출의 정석 — RPC Interface 가이드"
 date = "2025-11-11"
-description = "RPC는 다른 컴퓨터에 있는 함수를 마치 내 코드 안의 함수처럼 호출하게 해주는 통신 방식이다."
+description = "RPC는 다른 컴퓨터에 있는 함수를 마치 내 코드 안의 함수처럼 호출할 수 있는 통신 방식이다."
 tags = ["concept"]
 categories = ["concept"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> RPC는 다른 컴퓨터에 있는 함수를 마치 내 코드 안의 함수처럼 호출하게 해주는 통신 방식이다.
+> RPC는 다른 컴퓨터에 있는 함수를 마치 내 코드 안의 함수처럼 호출할 수 있는 통신 방식이다.
 
 ---
 

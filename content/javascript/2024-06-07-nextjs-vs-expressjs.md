@@ -18,7 +18,7 @@ TocOpen = false
 
 둘 다 Node.js 위에서 돌아가고, 둘 다 HTTP 요청을 처리한다. 그래서 처음에는 "뭘 쓰면 되지?"라는 혼란이 생긴다.
 
-Express.js는 라우트와 미들웨어만 제공하는 최소 도구다. 렌더링, 인증, DB 연결 등 나머지는 개발자가 직접 구성한다. Next.js는 React 기반 UI 렌더링(SSR/SSG/CSR)과 파일 기반 라우팅, API Route를 한 묶음으로 제공한다. 프론트엔드가 필요 없는 순수 API 서버라면 Express.js가 더 가볍고 유연하다. React UI와 API를 함께 개발한다면 Next.js가 설정 부담을 줄여준다.
+Express.js는 라우트와 미들웨어만 제공하는 최소 도구다. 렌더링, 인증, DB 연결 등 나머지는 개발자가 직접 구성한다. Next.js는 React 기반 UI 렌더링(SSR/SSG/CSR)과 파일 기반 라우팅, API Route를 한 묶음으로 제공한다. 프론트엔드가 필요 없는 순수 API 서버라면 Express.js가 더 가볍고 유연하다. React UI와 API를 함께 개발할 때는 Next.js가 설정 부담을 줄여준다.
 
 초보자는 처음에 이렇게 이해하면 된다.
 

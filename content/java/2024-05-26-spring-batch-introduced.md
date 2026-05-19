@@ -1,7 +1,7 @@
 +++
 title = "Spring Batch 입문 — 대량 데이터를 묶음으로 처리하는 프레임워크"
 date = "2024-05-26"
-description = "Spring Batch는 대량 데이터를 Job-Step-Chunk 구조로 나눠 처리하는 프레임워크로, 실패 지점부터 재시작과 트랜잭션 관리를 자동으로 처리해준다."
+description = "Spring Batch는 대량 데이터를 Job-Step-Chunk 구조로 나눠 처리하는 프레임워크로, 실패 지점부터 재시작과 트랜잭션 관리를 자동으로 처리한다."
 tags = ["java"]
 categories = ["java"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Spring Batch는 대량 데이터를 Job-Step-Chunk 구조로 나눠 처리하는 프레임워크로, 실패 지점부터 재시작과 트랜잭션 관리를 자동으로 처리해준다.
+> Spring Batch는 대량 데이터를 Job-Step-Chunk 구조로 나눠 처리하는 프레임워크로, 실패 지점부터 재시작과 트랜잭션 관리를 자동으로 처리한다.
 
 ---
 

@@ -1,5 +1,5 @@
 +++
-title = "Spring Bean — 스프링이 객체를 대신 관리해주는 방식"
+title = "Spring Bean — 스프링이 객체를 관리하는 방식"
 date = "2024-06-02"
 description = "Spring Bean은 개발자가 직접 `new`로 생성하는 대신, 스프링 컨테이너가 대신 만들고 관리하는 객체다."
 tags = ["java"]
@@ -64,7 +64,7 @@ public class AppConfig {
 
 ## 한 줄 요약 — 이것만 기억하면 된다
 
-**Spring Bean은 `new` 대신 스프링 컨테이너가 생성·관리하는 객체이며, 의존성 교체와 테스트를 쉽게 만들어준다.**
+**Spring Bean은 `new` 대신 스프링 컨테이너가 생성·관리하는 객체이며, 의존성 교체와 테스트를 쉽게 한다.**
 
 ## 나중에 더 깊게 들어가면
 

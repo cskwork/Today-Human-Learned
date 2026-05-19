@@ -1,7 +1,7 @@
 +++
 title = "Next.js — React 앱에 서버 렌더링을 더한 프레임워크"
 date = "2024-06-07"
-description = "Next.js는 React로 UI를 만들면서 SSR, SSG, CSR을 상황에 따라 선택할 수 있게 해주는 풀스택 프레임워크다."
+description = "Next.js는 React로 UI를 만들면서 SSR, SSG, CSR을 상황에 따라 골라 쓸 수 있는 풀스택 프레임워크다."
 tags = ["javascript"]
 categories = ["javascript"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Next.js는 React로 UI를 만들면서 SSR, SSG, CSR을 상황에 따라 선택할 수 있게 해주는 풀스택 프레임워크다.
+> Next.js는 React로 UI를 만들면서 SSR, SSG, CSR을 상황에 따라 골라 쓸 수 있는 풀스택 프레임워크다.
 
 ---
 
@@ -18,7 +18,7 @@ TocOpen = false
 
 순수 React(Create React App)는 브라우저에서 JavaScript가 실행된 뒤에야 화면이 그려진다. 이 방식은 검색 엔진이 콘텐츠를 제대로 읽지 못하고, 첫 화면이 뜨는 데 시간이 걸린다는 단점이 있다.
 
-Next.js는 서버가 HTML을 미리 만들어서 브라우저에 내려주는 방식(SSR, SSG)을 React와 결합한다. 덕분에 첫 화면이 빠르고, SEO(검색 엔진 최적화)에도 유리하다. 블로그, 커머스, 대시보드, SaaS 프론트엔드에 널리 쓰인다.
+Next.js는 서버가 HTML을 미리 만들어 브라우저에 내려주는 방식(SSR, SSG)을 React와 결합한다. 덕분에 첫 화면이 빠르고, SEO(검색 엔진 최적화)에도 유리하다. 블로그, 커머스, 대시보드, SaaS 프론트엔드에 널리 쓰인다.
 
 초보자는 처음에 이렇게 이해하면 된다.
 

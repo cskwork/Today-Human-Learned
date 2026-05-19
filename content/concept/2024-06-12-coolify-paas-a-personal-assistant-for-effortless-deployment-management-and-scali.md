@@ -16,7 +16,7 @@ TocOpen = false
 
 ## Coolify를 왜 쓰는지 감 잡기
 
-PaaS(Platform as a Service)란 서버 설정, 배포 파이프라인, SSL 인증서 등 인프라 작업을 플랫폼이 대신 처리해주는 서비스다. Heroku나 Render 같은 상용 PaaS를 쓰면 편하지만 비용이 빨리 늘어난다.
+PaaS(Platform as a Service)란 서버 설정, 배포 파이프라인, SSL 인증서 등 인프라 작업을 플랫폼이 대신 처리하는 서비스다. Heroku나 Render 같은 상용 PaaS를 쓰면 편하지만 비용이 빨리 늘어난다.
 
 Coolify는 같은 편의성을 내 서버 위에서 구현한다. VPS 하나에 Coolify를 설치하면 그 서버가 작은 Heroku처럼 동작한다. Git 저장소를 연결하고 배포 버튼을 누르면 빌드, 컨테이너 실행, 도메인 연결, HTTPS 설정까지 자동으로 진행된다.
 

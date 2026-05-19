@@ -1,7 +1,7 @@
 +++
 title = "MCP — AI와 외부 도구를 연결하는 표준 프로토콜"
 date = "2024-11-28"
-description = "MCP는 AI 모델이 파일 시스템, 데이터베이스, API 같은 외부 데이터 소스에 표준화된 방식으로 접근하게 해주는 Anthropic의 오픈 프로토콜이다."
+description = "MCP는 AI 모델이 파일 시스템, 데이터베이스, API 같은 외부 데이터 소스에 표준화된 방식으로 접근할 수 있는 Anthropic의 오픈 프로토콜이다."
 tags = ["ai"]
 categories = ["ai"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> MCP는 AI 모델이 파일 시스템, 데이터베이스, API 같은 외부 데이터 소스에 표준화된 방식으로 접근하게 해주는 Anthropic의 오픈 프로토콜이다.
+> MCP는 AI 모델이 파일 시스템, 데이터베이스, API 같은 외부 데이터 소스에 표준화된 방식으로 접근할 수 있는 Anthropic의 오픈 프로토콜이다.
 
 ---
 

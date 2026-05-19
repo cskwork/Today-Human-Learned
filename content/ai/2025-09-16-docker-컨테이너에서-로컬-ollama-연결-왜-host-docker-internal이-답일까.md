@@ -30,7 +30,7 @@ Docker는 이 문제를 위해 `host.docker.internal`이라는 특수 DNS 이름
 |---|---|
 | Ollama | 로컬에서 LLM을 실행하는 도구. 기본적으로 포트 11434를 쓴다. |
 | host.docker.internal | 컨테이너 안에서 호스트(내 컴퓨터)의 localhost에 접근할 때 쓰는 특수 도메인 이름. |
-| Docker Bridge Network | 같은 호스트의 컨테이너들이 서로 통신할 수 있게 해주는 기본 네트워크 모드. |
+| Docker Bridge Network | 같은 호스트의 컨테이너들이 서로 통신하는 기본 네트워크 모드. |
 | extra_hosts | docker-compose.yml에서 컨테이너에 커스텀 DNS 항목을 추가하는 설정 키. |
 | host-gateway | Linux에서 `host.docker.internal`이 가리킬 호스트 IP를 Docker에게 알려주는 특수 값. |
 

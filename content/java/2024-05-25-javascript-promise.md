@@ -1,7 +1,7 @@
 +++
 title = "Javascript Promise — 비동기 처리를 약속으로 묶기"
 date = "2024-05-25"
-description = "Promise는 \"나중에 결과를 줄게\"라는 약속 객체로, 중첩 콜백 없이 순차 비동기 작업을 선형으로 작성하게 해준다."
+description = "Promise는 \"나중에 결과를 줄게\"라는 약속 객체로, 중첩 콜백 없이 순차 비동기 작업을 선형으로 작성할 수 있다."
 tags = ["java"]
 categories = ["java"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Promise는 "나중에 결과를 줄게"라는 약속 객체로, 중첩 콜백 없이 순차 비동기 작업을 선형으로 작성하게 해준다.
+> Promise는 "나중에 결과를 줄게"라는 약속 객체로, 중첩 콜백 없이 순차 비동기 작업을 선형으로 작성할 수 있다.
 
 ---
 

@@ -31,7 +31,7 @@ Your branch is ahead of 'origin/main' by 7 commits.
 
 ## 2. 왜 이렇게 동작하는가
 
-git에서 새 브랜치를 만들 때 시작점(start point)이 원격 트래킹 브랜치(`origin/main`, `origin/dev` 등)면, git은 친절하게도 "이 새 브랜치는 그 원격 브랜치와 연관된 거겠지?"라고 추측해서 upstream을 자동 설정한다.
+git에서 새 브랜치를 만들 때 시작점(start point)이 원격 트래킹 브랜치(`origin/main`, `origin/dev` 등)면, git은 "이 새 브랜치는 그 원격 브랜치와 연관된 거겠지?"라고 추측해서 upstream을 자동 설정한다.
 
 ```bash
 # 아래 모든 경우가 origin/main을 upstream으로 박는다.
@@ -40,7 +40,7 @@ git switch -c feature/x origin/main
 git checkout main && git checkout -b feature/x   # main이 origin/main을 트래킹 중이면 전파
 ```
 
-의도된 동작이긴 하다. 문제는 **"기능 브랜치 작업 워크플로우"에서는 거의 항상 잘못된 추측**이라는 점이다. `feature/x`의 upstream은 `origin/feature/x`여야 하지, `origin/main`이면 안 된다.
+의도된 동작이긴 하다. 문제는 **"기능 브랜치 워크플로우"에서는 거의 항상 잘못된 추측**이라는 점이다. `feature/x`의 upstream은 `origin/feature/x`여야 하지, `origin/main`이면 안 된다.
 
 ## 3. 4가지 옵션 비교
 
@@ -176,7 +176,7 @@ git add .githooks && git commit -m "chore: add shared pre-push hook"
 - 한 줄로 해결: `git config --global branch.autoSetupMerge simple`
 - 사고가 진짜 두렵다면 pre-push hook으로 보호 브랜치 푸시 자체를 막는다.
 
-git의 디폴트는 1990년대 후반 — 단일 메인 브랜치, push.matching, 짧은 브랜치 수명 같은 가정 위에 만들어졌다. 2026년의 트렁크 기반 개발 + 짧은 PR 브랜치 워크플로우에서는 디폴트를 한 번씩 다시 의심해볼 가치가 있다.
+git의 디폴트는 1990년대 후반 — 단일 메인 브랜치, push.matching, 짧은 브랜치 수명 같은 가정 위에 만들어졌다. 2026년의 트렁크 기반 개발 + 짧은 PR 브랜치 워크플로우에서는 디폴트를 한 번 다시 의심해볼 가치가 있다.
 
 ---
 

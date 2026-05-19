@@ -1,7 +1,7 @@
 +++
 title = "Desktop Commander MCP — AI로 데스크톱 자동화하기"
 date = "2025-05-28"
-description = "Desktop Commander MCP는 Claude가 파일 시스템과 터미널에 직접 접근할 수 있게 해주는 MCP 서버로, 반복적인 시스템 작업을 자연어 명령으로 처리할 수 있게 한다."
+description = "Desktop Commander MCP는 Claude가 파일 시스템과 터미널에 직접 접근하는 MCP 서버로, 반복적인 시스템 작업을 자연어 명령으로 처리한다."
 tags = ["ai"]
 categories = ["ai"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Desktop Commander MCP는 Claude가 파일 시스템과 터미널에 직접 접근할 수 있게 해주는 MCP 서버로, 반복적인 시스템 작업을 자연어 명령으로 처리할 수 있게 한다.
+> Desktop Commander MCP는 Claude가 파일 시스템과 터미널에 직접 접근하는 MCP 서버로, 반복적인 시스템 작업을 자연어 명령으로 처리한다.
 
 ---
 

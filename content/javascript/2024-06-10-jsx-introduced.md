@@ -16,7 +16,7 @@ TocOpen = false
 
 ## JSX를 왜 쓰는지 감 잡기
 
-React 이전에는 JavaScript로 화면 요소를 만들 때 `document.createElement('h1')` 같은 코드를 직접 썼다. 구조가 복잡해질수록 코드가 길어지고, 어떤 화면이 만들어지는지 한눈에 파악하기 어려웠다. JSX는 이 문제를 해결하기 위해 나왔다. HTML 구조를 JavaScript 안에서 그대로 쓸 수 있어서, 코드만 봐도 결과 화면이 떠오른다.
+React 이전에는 JavaScript로 화면 요소를 만들 때 `document.createElement('h1')` 같은 코드를 직접 썼다. 구조가 복잡해질수록 코드가 길어지고, 어떤 화면이 만들어지는지 한눈에 파악하기 어려웠다. JSX는 이 문제를 해결하려고 나왔다. HTML 구조를 JavaScript 안에서 그대로 쓸 수 있어서, 코드만 봐도 결과 화면이 떠오른다.
 
 JSX 자체는 브라우저가 이해하지 못한다. Babel 같은 도구가 JSX를 일반 JavaScript로 변환한 뒤 브라우저에서 실행된다.
 

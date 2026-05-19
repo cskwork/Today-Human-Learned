@@ -1,7 +1,7 @@
 +++
 title = "Quartz — Java 애플리케이션의 작업 스케줄러"
 date = "2024-05-27"
-description = "Quartz는 Java 앱에서 \"언제, 얼마나 자주\" 어떤 작업을 실행할지 선언적으로 정의하게 해주는 스케줄링 라이브러리다."
+description = "Quartz는 Java 앱에서 \"언제, 얼마나 자주\" 어떤 작업을 실행할지 선언적으로 정의하는 스케줄링 라이브러리다."
 tags = ["java"]
 categories = ["java"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Quartz는 Java 앱에서 "언제, 얼마나 자주" 어떤 작업을 실행할지 선언적으로 정의하게 해주는 스케줄링 라이브러리다.
+> Quartz는 Java 앱에서 "언제, 얼마나 자주" 어떤 작업을 실행할지 선언적으로 정의하는 스케줄링 라이브러리다.
 
 ---
 

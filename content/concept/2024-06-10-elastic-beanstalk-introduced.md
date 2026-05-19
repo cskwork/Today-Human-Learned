@@ -1,7 +1,7 @@
 +++
 title = "AWS Elastic Beanstalk — 코드만 올리면 배포가 되는 서비스"
 date = "2024-06-10"
-description = "Elastic Beanstalk은 코드를 업로드하면 서버 프로비저닝, 로드밸런싱, 오토스케일링을 자동으로 처리해주는 AWS PaaS 서비스다."
+description = "Elastic Beanstalk은 코드를 업로드하면 서버 프로비저닝, 로드밸런싱, 오토스케일링을 자동으로 처리하는 AWS PaaS 서비스다."
 tags = ["concept"]
 categories = ["concept"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Elastic Beanstalk은 코드를 업로드하면 서버 프로비저닝, 로드밸런싱, 오토스케일링을 자동으로 처리해주는 AWS PaaS 서비스다.
+> Elastic Beanstalk은 코드를 업로드하면 서버 프로비저닝, 로드밸런싱, 오토스케일링을 자동으로 처리하는 AWS PaaS 서비스다.
 
 ---
 
@@ -52,7 +52,7 @@ Django 웹 애플리케이션을 배포하는 흐름이다.
 
 ## 한 줄 요약 — 이것만 기억하면 된다
 
-**Elastic Beanstalk은 코드를 올리면 서버를 알아서 만들고 관리해주는 AWS의 자동화 배포 플랫폼이다.**
+**Elastic Beanstalk은 코드를 올리면 서버를 알아서 만들고 관리하는 AWS의 자동화 배포 플랫폼이다.**
 
 ## 나중에 더 깊게 들어가면
 

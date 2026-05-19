@@ -16,7 +16,7 @@ TocOpen = false
 
 ## 이 문제가 왜 생기는지 감 잡기
 
-Spring Boot는 실행 시 `spring.profiles.active` 값을 보고 어느 설정 파일을 로드할지 결정한다. Ultimate Edition에는 Spring 플러그인이 내장되어 자동으로 처리해주지만, Community Edition에는 그 플러그인이 없다. 결과적으로 Gradle `bootRun`으로 실행할 때 프로파일이 지정되지 않아 `application-dev.yml` 같은 파일을 찾지 못하거나, 예상과 다른 설정으로 기동된다.
+Spring Boot는 실행 시 `spring.profiles.active` 값을 보고 어느 설정 파일을 로드할지 결정한다. Ultimate Edition에는 Spring 플러그인이 내장되어 자동으로 처리하지만, Community Edition에는 그 플러그인이 없다. 결과적으로 Gradle `bootRun`으로 실행할 때 프로파일이 지정되지 않아 `application-dev.yml` 같은 파일을 찾지 못하거나, 예상과 다른 설정으로 기동된다.
 
 이 문제는 코드나 yml 파일 자체의 문제가 아니라, IntelliJ가 JVM에 프로파일 정보를 전달하지 않아서 생긴다.
 

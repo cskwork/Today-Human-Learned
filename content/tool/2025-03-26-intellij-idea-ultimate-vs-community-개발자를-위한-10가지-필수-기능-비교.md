@@ -49,7 +49,7 @@ JetBrains는 IntelliJ IDEA를 두 가지로 제공한다. Community는 오픈소
 | 원격 개발 (SSH) | X | O |
 | PHP, Python, Go 등 다언어 | X | O |
 
-학생과 오픈소스 프로젝트 기여자는 JetBrains 공식 프로그램을 통해 Ultimate를 무료로 사용할 수 있다.
+학생과 오픈소스 프로젝트 기여자는 JetBrains 공식 프로그램으로 Ultimate를 무료로 사용할 수 있다.
 
 ## 이 단계에서 중요한 판단 기준
 

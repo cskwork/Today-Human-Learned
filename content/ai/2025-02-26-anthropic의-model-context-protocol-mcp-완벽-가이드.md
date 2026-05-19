@@ -1,7 +1,7 @@
 +++
 title = "Model Context Protocol(MCP) — AI에게 손발을 달아주는 방법"
 date = "2025-02-26"
-description = "MCP는 Claude 같은 AI 모델이 파일, 데이터베이스, 외부 서비스에 표준화된 방식으로 접근할 수 있게 해주는 프로토콜이다."
+description = "MCP는 Claude 같은 AI 모델이 파일, 데이터베이스, 외부 서비스에 표준화된 방식으로 접근하는 프로토콜이다."
 tags = ["ai"]
 categories = ["ai"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> MCP는 Claude 같은 AI 모델이 파일, 데이터베이스, 외부 서비스에 표준화된 방식으로 접근할 수 있게 해주는 프로토콜이다.
+> MCP는 Claude 같은 AI 모델이 파일, 데이터베이스, 외부 서비스에 표준화된 방식으로 접근하는 프로토콜이다.
 
 ---
 

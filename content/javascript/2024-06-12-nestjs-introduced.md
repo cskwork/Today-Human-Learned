@@ -18,7 +18,7 @@ TocOpen = false
 
 Express만으로 백엔드를 만들면 파일 구조와 의존성 관리를 모두 직접 결정해야 한다. 프로젝트가 커질수록 어디에 무엇을 두어야 하는지 규칙이 없어 코드가 뒤엉키기 쉽다.
 
-NestJS는 Angular에서 영감을 받아 만들어진 프레임워크로, "이런 경우엔 이 파일에 이 코드를 넣어라"는 규칙을 미리 정해둔다. TypeScript를 기본으로 지원하며, 의존성 주입 컨테이너가 내장되어 있어 서비스 간 연결을 자동으로 처리해 준다.
+NestJS는 Angular에서 영감을 받아 만들어진 프레임워크로, "이런 경우엔 이 파일에 이 코드를 넣어라"는 규칙을 미리 정해둔다. TypeScript를 기본으로 지원하며, 의존성 주입 컨테이너가 내장되어 서비스 간 연결을 자동으로 처리한다.
 
 초보자는 처음에 이렇게 이해하면 된다.
 
@@ -66,7 +66,7 @@ export class BooksService {
 }
 ```
 
-`BooksController`는 `BooksService`를 생성자에 선언만 하면 NestJS가 자동으로 인스턴스를 주입해 준다. 직접 `new BooksService()`를 쓸 필요가 없다.
+`BooksController`는 `BooksService`를 생성자에 선언만 하면 NestJS가 자동으로 인스턴스를 주입한다. 직접 `new BooksService()`를 쓸 필요가 없다.
 
 ## 이 단계에서 중요한 판단 기준
 

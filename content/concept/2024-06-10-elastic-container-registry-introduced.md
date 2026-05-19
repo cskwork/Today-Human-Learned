@@ -1,7 +1,7 @@
 +++
 title = "AWS ECR — Docker 이미지를 저장하고 배포하는 컨테이너 레지스트리"
 date = "2024-06-10"
-description = "Amazon ECR은 Docker 이미지를 AWS에 안전하게 저장하고, ECS나 EKS에서 바로 꺼내 쓸 수 있게 해주는 완전 관리형 컨테이너 레지스트리다."
+description = "Amazon ECR은 Docker 이미지를 AWS에 안전하게 저장하고, ECS나 EKS에서 바로 꺼내 쓸 수 있는 완전 관리형 컨테이너 레지스트리다."
 tags = ["concept"]
 categories = ["concept"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Amazon ECR은 Docker 이미지를 AWS에 안전하게 저장하고, ECS나 EKS에서 바로 꺼내 쓸 수 있게 해주는 완전 관리형 컨테이너 레지스트리다.
+> Amazon ECR은 Docker 이미지를 AWS에 안전하게 저장하고, ECS나 EKS에서 바로 꺼내 쓸 수 있는 완전 관리형 컨테이너 레지스트리다.
 
 ---
 

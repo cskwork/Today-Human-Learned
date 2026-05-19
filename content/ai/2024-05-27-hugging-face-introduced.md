@@ -1,7 +1,7 @@
 +++
-title = "Hugging Face — NLP 모델을 쉽게 쓰게 해주는 플랫폼"
+title = "Hugging Face — NLP 모델을 간편하게 활용하는 플랫폼"
 date = "2024-05-27"
-description = "Hugging Face는 수천 개의 사전 학습 모델을 코드 몇 줄로 불러다 쓸 수 있게 해주는 오픈소스 플랫폼이다."
+description = "Hugging Face는 수천 개의 사전 학습 모델을 코드 몇 줄로 불러다 쓸 수 있는 오픈소스 플랫폼이다."
 tags = ["ai"]
 categories = ["ai"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Hugging Face는 수천 개의 사전 학습 모델을 코드 몇 줄로 불러다 쓸 수 있게 해주는 오픈소스 플랫폼이다.
+> Hugging Face는 수천 개의 사전 학습 모델을 코드 몇 줄로 불러다 쓸 수 있는 오픈소스 플랫폼이다.
 
 ---
 
@@ -53,7 +53,7 @@ Hugging Face를 선택하기 전에 먼저 확인할 것은 "Model Hub에 내 �
 
 ## 한 줄 요약 — 이것만 기억하면 된다
 
-**Hugging Face는 NLP 모델을 처음부터 만들지 않아도 되게 해주는 도구 모음이다.**
+**Hugging Face는 NLP 모델을 처음부터 만들지 않아도 되는 도구 모음이다.**
 
 ## 나중에 더 깊게 들어가면
 

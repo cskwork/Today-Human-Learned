@@ -16,7 +16,7 @@ TocOpen = false
 
 ## 이 주제를 왜 쓰는지 감 잡기
 
-null 체크를 연달아 쓰면 코드가 if문 중첩으로 망가진다. Java 8의 Optional은 null일 수 있는 값을 감싸서, 체인 형태로 변환과 null 처리를 한 줄로 이어 쓸 수 있게 해 준다.
+null 체크를 연달아 쓰면 코드가 if문 중첩으로 망가진다. Java 8의 Optional은 null일 수 있는 값을 감싸서, 체인 형태로 변환과 null 처리를 한 줄로 이어 쓸 수 있다.
 
 그런데 Optional 안의 값을 변환할 때 두 가지 메서드가 있다. 변환 함수가 평범한 값(String, int 등)을 반환하면 map()을 쓰면 된다. 문제는 변환 함수가 Optional을 반환할 때다. 이때 map()을 쓰면 Optional 안에 Optional이 들어가는 이중 포장이 생긴다. flatMap()은 이 이중 포장을 막아 준다.
 

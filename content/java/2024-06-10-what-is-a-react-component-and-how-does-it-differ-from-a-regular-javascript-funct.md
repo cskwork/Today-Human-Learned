@@ -29,7 +29,7 @@ TocOpen = false
 | JSX | HTML처럼 생긴 JavaScript 문법. 컴포넌트가 반환하는 UI 설명서다. |
 | Props | 부모 컴포넌트가 자식에게 넘겨주는 읽기 전용 데이터. 함수의 인자와 같다. |
 | State | 컴포넌트 내부에서 관리하는 데이터. 바뀌면 화면이 다시 그려진다. |
-| Hook | 함수형 컴포넌트에서 state나 생명주기 기능을 쓸 수 있게 해주는 함수. `useState`, `useEffect` 등. |
+| Hook | 함수형 컴포넌트에서 state나 생명주기 기능을 쓸 수 있는 함수. `useState`, `useEffect` 등. |
 | 렌더링 | 컴포넌트가 반환한 JSX를 실제 DOM으로 변환하는 과정. |
 
 ## 예를 들어 설명하면

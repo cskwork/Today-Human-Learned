@@ -18,7 +18,7 @@ TocOpen = false
 
 Node.js에는 `http` 모듈이 기본 내장되어 있다. 그런데 이 모듈만으로 서버를 만들면 URL 패턴 처리, JSON 파싱, 에러 응답 같은 코드를 모두 직접 짜야 한다. 코드가 길어지고 실수가 늘어난다.
 
-Express.js는 이 반복 작업을 미리 묶어놓은 라이브러리다. "이 URL로 GET 요청이 오면 이걸 돌려줘"처럼 의도를 한 줄로 표현할 수 있다. Node.js 기반 API 서버, REST 백엔드, BFF(Backend for Frontend) 등에 폭넓게 쓰인다.
+Express.js는 이 반복 작업을 미리 묶어놓은 라이브러리다. "이 URL로 GET 요청이 오면 이걸 돌려줘"처럼 의도를 한 줄로 표현할 수 있다. Node.js 기반 API 서버, REST 백엔드, BFF(Backend for Frontend) 등에 널리 쓰인다.
 
 초보자는 처음에 이렇게 이해하면 된다.
 

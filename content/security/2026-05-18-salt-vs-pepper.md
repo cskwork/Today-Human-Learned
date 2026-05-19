@@ -31,7 +31,7 @@ TocOpen = false
 
 ## 2. Salt — "같은 입력을 다르게 보이게"
 
-각 사용자에게 다른 랜덤값을 붙여 해시:
+사용자마다 다른 랜덤값을 붙여 해시:
 
 ```text
 사용자 A: 1234 + 랜덤값A → hashA
@@ -73,7 +73,7 @@ DB에는 `salt`와 `hash`만 들어가고, **Pepper는 DB에 없다.**
 - Salt만 있을 때: 공격자가 hash + salt를 다 봐서 brute force 시도 가능 (오래 걸리지만 가능).
 - Pepper 추가 시: 공격자가 가진 정보로는 hash를 재현할 수 없다. **Pepper도 같이 털려야 깰 수 있음.**
 
-즉 Pepper는 **"DB 단독 유출"이라는 부분적 침해 시나리오에 대한 추가 방어선**이다.
+즉 Pepper는 **"DB 단독 유출"이라는 부분 침해 시나리오에 대한 추가 방어선**이다.
 
 ## 4. 비교
 
@@ -90,7 +90,7 @@ DB에는 `salt`와 `hash`만 들어가고, **Pepper는 DB에 없다.**
 
 ### bcrypt / argon2 / scrypt를 써라
 
-직접 `sha256(password + salt)` 같은 걸 짜지 마라. **KDF(Key Derivation Function) 라이브러리**를 쓴다.
+직접 `sha256(password + salt)` 같은 걸 구현하지 마라. **KDF(Key Derivation Function) 라이브러리**를 써라.
 
 - **bcrypt** — 가장 보편적. Salt를 라이브러리가 알아서 처리하고 hash 문자열에 같이 인코딩한다.
 - **argon2** — 현대 권장 (PHC 우승자). 메모리 hard.

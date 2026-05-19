@@ -16,7 +16,7 @@ TocOpen = false
 
 ## Vue 템플릿 시스템을 왜 쓰는지 감 잡기
 
-HTML만으로 동적인 화면을 만들려면 JavaScript로 DOM을 직접 조작해야 한다. 데이터가 바뀔 때마다 `document.getElementById`를 불러 값을 바꿔줘야 하는 번거로움이 생긴다.
+HTML만으로 동적인 화면을 만들려면 JavaScript로 DOM을 직접 조작해야 한다. 데이터가 바뀔 때마다 `document.getElementById`를 호출해 값을 바꿔야 하는 번거로움이 생긴다.
 
 Vue는 이 문제를 뒤집는다. 데이터(JavaScript 객체)를 선언하고 HTML에 연결만 해두면, 데이터가 바뀌는 순간 화면이 알아서 업데이트된다. 개발자는 DOM 조작 대신 데이터 관리에만 집중하면 된다.
 

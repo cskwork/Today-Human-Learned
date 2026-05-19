@@ -1,7 +1,7 @@
 +++
 title = "OpenStack — 내 손으로 짓는 오픈소스 클라우드"
 date = "2024-12-18"
-description = "OpenStack은 AWS처럼 작동하는 클라우드를 자체 서버에 직접 구축할 수 있게 해주는 오픈소스 플랫폼이다."
+description = "OpenStack은 AWS처럼 작동하는 클라우드를 자체 서버에 직접 구축할 수 있는 오픈소스 플랫폼이다."
 tags = ["kubernetes"]
 categories = ["kubernetes"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> OpenStack은 AWS처럼 작동하는 클라우드를 자체 서버에 직접 구축할 수 있게 해주는 오픈소스 플랫폼이다.
+> OpenStack은 AWS처럼 작동하는 클라우드를 자체 서버에 직접 구축할 수 있는 오픈소스 플랫폼이다.
 
 ---
 

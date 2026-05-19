@@ -43,7 +43,7 @@ sudo systemctl start apache2             # 서비스 시작
 sudo systemctl enable apache2            # 재부팅 후에도 자동 시작
 ```
 
-이후 브라우저에서 서버 IP를 열면 Apache 기본 페이지가 나온다. GUI 없이 서버를 구성할 수 있다는 것이 Linux의 핵심 강점이다.
+이후 브라우저에서 서버 IP를 열면 Apache 기본 페이지가 나온다. GUI 없이 서버를 구성할 수 있다는 점이 Linux의 핵심 강점이다.
 
 ## 이 단계에서 중요한 판단 기준
 

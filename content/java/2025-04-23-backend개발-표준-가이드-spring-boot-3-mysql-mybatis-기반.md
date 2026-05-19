@@ -1,7 +1,7 @@
 +++
 title = "Backend 개발 표준 가이드 — Spring Boot 3, MySQL, MyBatis 기반"
 date = "2025-04-23"
-description = "코드 규칙은 심미적 선택이 아니라 팀이 6개월 뒤 자기 코드를 읽을 수 있게 해주는 생존 도구다."
+description = "코드 규칙은 심미적 선택이 아니라 팀이 6개월 뒤 자기 코드를 읽을 수 있는 생존 도구다."
 tags = ["java"]
 categories = ["java"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> 코드 규칙은 심미적 선택이 아니라 팀이 6개월 뒤 자기 코드를 읽을 수 있게 해주는 생존 도구다.
+> 코드 규칙은 심미적 선택이 아니라 팀이 6개월 뒤 자기 코드를 읽을 수 있는 생존 도구다.
 
 ---
 

@@ -1,7 +1,7 @@
 +++
 title = "Hibernate — Java 객체와 DB 테이블을 연결하는 ORM"
 date = "2024-05-28"
-description = "Hibernate는 Java 클래스와 관계형 DB 테이블을 자동으로 매핑해, SQL 대신 Java 객체로 데이터를 다룰 수 있게 해주는 ORM 프레임워크다."
+description = "Hibernate는 Java 클래스와 관계형 DB 테이블을 자동으로 매핑해, SQL 대신 Java 객체로 데이터를 다루는 ORM 프레임워크다."
 tags = ["java"]
 categories = ["java"]
 draft = false
@@ -10,7 +10,7 @@ TocOpen = false
 +++
 
 > **TL;DR**
-> Hibernate는 Java 클래스와 관계형 DB 테이블을 자동으로 매핑해, SQL 대신 Java 객체로 데이터를 다룰 수 있게 해주는 ORM 프레임워크다.
+> Hibernate는 Java 클래스와 관계형 DB 테이블을 자동으로 매핑해, SQL 대신 Java 객체로 데이터를 다루는 ORM 프레임워크다.
 
 ---
 
