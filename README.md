@@ -1,9 +1,13 @@
 # Today Human Learned (THL)
 
+[![Live site](https://img.shields.io/badge/live%20site-cskwork.github.io%2FToday--Human--Learned-2ea44f?style=flat-square)](https://cskwork.github.io/Today-Human-Learned/)
+[![Deploy Hugo](https://github.com/cskwork/Today-Human-Learned/actions/workflows/hugo.yml/badge.svg)](https://github.com/cskwork/Today-Human-Learned/actions/workflows/hugo.yml)
+[![Posts](https://img.shields.io/badge/posts-447-blue?style=flat-square)](https://cskwork.github.io/Today-Human-Learned/archives/)
+
 > 매일 마주친 문제·도구·개념을 **주제별·날짜별**로 정리하는 학습 저장소.
 > 한 주제를 처음 배우는 사람이 '아, 이런 거구나' 하고 감을 잡을 수 있도록 — 파인만 스타일로 짧게.
 
-**Live site:** https://cskwork.github.io/Today-Human-Learned/
+**Live site →** <https://cskwork.github.io/Today-Human-Learned/>
 
 ## 구조
 
