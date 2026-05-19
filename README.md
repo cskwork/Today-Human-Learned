@@ -32,6 +32,10 @@
 
 - 2026-05-19 — [Git이 새 브랜치를 부모에 자동으로 연결시키는 함정 — `branch.autoSetupMerge`](git/2026-05-19-branch-autosetupmerge.md)
 
+### code-search
+
+- 2026-05-19 — [codegraph vs graphify — Java 코드베이스에서 측정해본 결과](code-search/2026-05-19-codegraph-vs-graphify-java.md)
+
 ---
 
 작성: [@cskwork](https://github.com/cskwork)
