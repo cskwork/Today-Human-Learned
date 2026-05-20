@@ -1,0 +1,1 @@
+Research the top 10 popular ways and methods to utilize leftover Claude Code and Codex tokens at end of billing cycle / quota window. Deliver a ranked, evidence-cited research report saved to research/leftover-tokens-top10.md with sources, use cases, and recommended workflows.

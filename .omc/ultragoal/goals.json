@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-20T10:26:00.076Z",
+  "updatedAt": "2026-05-20T10:31:11.962Z",
+  "briefPath": ".omc/ultragoal/brief.md",
+  "goalsPath": ".omc/ultragoal/goals.json",
+  "ledgerPath": ".omc/ultragoal/ledger.jsonl",
+  "claudeGoalMode": "aggregate",
+  "goals": [
+    {
+      "id": "G001-survey",
+      "title": "Survey",
+      "objective": "Survey 2025-2026 community sources (Reddit, HN, X, blogs, GitHub) for popular leftover-token use patterns for Claude Code and OpenAI Codex",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-05-20T10:26:00.076Z",
+      "updatedAt": "2026-05-20T10:27:23.267Z",
+      "startedAt": "2026-05-20T10:26:05.610Z",
+      "completedAt": "2026-05-20T10:27:23.267Z",
+      "evidence": "Survey gathered 25+ sources across Claude Code docs, Codex docs, blogs, Medium, dev.to, GitHub, and OpenAI/Anthropic help centers covering: Ralph loop overnight execution, Claude Code Routines (cloud schedule), sub-agents / agent teams parallel work, security audits (/security-review, /secret-scanner, /deps-check), dependency upgrades, test coverage generation (30%->85% in 20min), refactoring legacy code (800-line files in 15min), codebase onboarding skills (CLAUDE.md generation), Karpathy-style LLM Wiki / Obsidian second brain, Codex /goal mode for long autonomous tasks, Codex Automations scheduled tasks, MCP+Agents-SDK orchestration, and coding-tutor skills. Strong signals for clustering into 10 categories."
+    },
+    {
+      "id": "G002-synthesize",
+      "title": "Synthesize",
+      "objective": "Cluster and rank the top 10 methods with pros/cons, target user, and required setup",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-05-20T10:26:00.076Z",
+      "updatedAt": "2026-05-20T10:29:44.674Z",
+      "startedAt": "2026-05-20T10:27:28.410Z",
+      "completedAt": "2026-05-20T10:29:44.674Z",
+      "evidence": "Top 10 ranked methods clustered with target user / setup / pros / cons / recipe each, plus honorable mentions and anti-patterns. Draft synthesized into research/leftover-tokens-top10.md."
+    },
+    {
+      "id": "G003-document",
+      "title": "Document",
+      "objective": "Write final ranked report to research/leftover-tokens-top10.md with citations and a quick-start recipe per method",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-05-20T10:26:00.076Z",
+      "updatedAt": "2026-05-20T10:31:11.962Z",
+      "startedAt": "2026-05-20T10:30:10.131Z",
+      "evidence": "research/leftover-tokens-top10.md written: 191 lines, 14 section headings, 10 ranked methods, 45 cited sources.",
+      "completedAt": "2026-05-20T10:31:11.962Z"
+    }
+  ],
+  "claudeObjective": "Complete all ultragoal stories in .omc/ultragoal/goals.json: G001-survey Survey; G002-synthesize Synthesize; G003-document Document"
+}
